@@ -5,6 +5,11 @@ Unreleased
   Remove various monad transformer combinators, `flipfoldl'`, and `<<$>>`
   from the list of changes suggested in `.hlint.yaml`.
 
+* [#212](https://github.com/serokell/universum/issues/212)
+  Added rewrite rule for `toString . toText` case.
+  This may change semantics in some corner cases
+  (because `toString . toText` is not strictly the identity function).
+
 1.5.0
 =====
 
