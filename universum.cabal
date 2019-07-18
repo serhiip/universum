@@ -135,6 +135,7 @@ benchmark universum-benchmark
                      , universum
                      , containers
                      , gauge
+                     , text
                      , unordered-containers
   if impl(ghc == 7.10.3)
      build-depends:   semigroups >= 0.18
